@@ -16,4 +16,6 @@
 
 #
 
+### 3. Đọc file tailwind.config để biết các thông số global
+
 ### <font color="pink">To be update ...</font>
