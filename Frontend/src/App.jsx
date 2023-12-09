@@ -1,5 +1,11 @@
+import Card from './components/Card'
+
 function App() {
-  return <div className='bg-red-500 text-green-400'>hello cac ban</div>
+  return (
+    <div>
+      <Card />
+    </div>
+  )
 }
 
 export default App
