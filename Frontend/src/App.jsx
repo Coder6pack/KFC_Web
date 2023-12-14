@@ -1,9 +1,13 @@
-import Card from './components/Card'
+import Partyform from "./components/Party"
+import Slideshow from "./components/slideshow"
+
 
 function App() {
   return (
     <div>
-      <Card />
+      <Partyform/>
+      <Slideshow autoslide={true}>
+      </Slideshow>
     </div>
   )
 }

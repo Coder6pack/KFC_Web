@@ -21,23 +21,35 @@ export default {
       //color
       colors: {
         red: '#e4002b',
-        gray: '#6B6E79'
+        gray: '#6B6E79',
+        grayborder:'#a9a9a9',
       },
 
       //width
       width: {
+        120:'120px',
         138: '138.83px',
+        150:'150px',
         303: '303px',
         313: '313.282',
-        333: '333.333px'
+        333: '333.333px',
+        400:'400px',
+        500:'500px',
+        1830: '1830px',
+        99:'99%'
       },
 
       //height
       height: {
+        30:'30px',
         46: '46px',
+        75:'75px',
         215: '215px',
         272: '272px',
-        282: '282px'
+        282: '282px',
+        500: '500px',
+        400:'400px',
+        300:'300px'
       },
 
       //border width
@@ -61,7 +73,9 @@ export default {
       //margin
       margin: {
         10: '10px',
-        15: '15px'
+        12: '12px',
+        15: '15px',
+        30:'30px'
       },
 
       //scale
