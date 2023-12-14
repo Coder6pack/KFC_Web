@@ -1,19 +1,12 @@
-import Slideshow from './components/slideshow/slideshow'
-import Partyform from './components/Party/Partyform'
-const slides = [
-  'https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/GiangSinh.webp?v=gXDOPg',
-  'https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/BTLD.webp?v=gXDOPg',
-  'https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/GaQueKem.webp?v=gXDOPg'
-]
+import Partyform from "./components/Party"
+import Slideshow from "./components/slideshow"
+
+
 function App() {
   return (
     <div>
-      <Partyform />
-      <br />
+      <Partyform/>
       <Slideshow autoslide={true}>
-        {slides.map((s) => (
-          <img src={s} />
-        ))}
       </Slideshow>
     </div>
   )

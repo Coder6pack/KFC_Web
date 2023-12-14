@@ -1,3 +1,3 @@
-import Slideshow from './slideshow'
+import Slideshow from "./slideshow";
 
 export default Slideshow
