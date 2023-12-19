@@ -26,7 +26,7 @@ function Header() {
         {/* Điền các phần tử thẻ tương tự như trên */}
       </div>
     </div>
-  );
+  )
 }
 
 export default Header;
