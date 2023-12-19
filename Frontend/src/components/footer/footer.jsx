@@ -1,32 +1,33 @@
-const Footer = () => {
-    return (
-      <footer className="footer">
-        <section className="container common-footer">
-          <div className="accordian">
-            <app-accordian-group>
-              {/* ...Các app-accordian và nội dung tương ứng ở đây */}
-            </app-accordian-group>
-            <div className="div-footer">
-              <app-accordian>
-                {/* ...Nội dung app-accordian liên quan */}
-              </app-accordian>
-              {/* ...Thêm các phần tử HTML và nội dung khác ở đây */}
-            </div>
-            <div className="social-link">
-              <p>Copyright © 2023 KFC Vietnam</p>
-              <app-footer-bottom>
-                {/* ...Các liên kết đến các trang mạng xã hội */}
-              </app-footer-bottom>
-            </div>
-            <hr style={{ color: 'white', backgroundColor: 'white' }} />
-            <div className="row">
-              {/* ...Thông tin công ty */}
-            </div>
+export default function Footer() {
+  return (
+    <section className="container common-footer">
+    <app-footer-bottom>
+        <div class="flex justify-around bg-black text-white py-10">
+          <div class="list">
+            <p>KFC Food</p>
+            <p>Menu</p>
+            <p>Order Lookup</p>
+            <p>Gift Card</p>
           </div>
-        </section>
-      </footer>
-    );
-  };
-  
-  export default Footer;
-  
+        </div>
+        <div className="footer-bottom-wrap">
+            <div>
+                <a href="https://www.facebook.com/KFCVietnam/" target="_blank" className="footer-icon animated-links animate__animated animate__bounce" style={{ animationDelay: '2.2s' }}>
+                    <i className="icon-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/kfc_vietnam/" target="_blank" className="footer-icon animated-links animate__animated animate__bounce" style={{ animationDelay: '2.3s' }}>
+                    <i className="icon-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/user/KFCVietnam2011" target="_blank" className="footer-icon animated-links animate__animated animate__bounce" style={{ animationDelay: '2.4s' }}>
+                    <i className="icon-youtube"></i>
+                </a>
+                <a href="https://twitter.com/kfc_vietnam" target="_blank" className="footer-icon animated-links animate__animated animate__bounce" style={{ animationDelay: '2.5s' }}>
+                    <i className="icon-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </app-footer-bottom>
+    <p>Copyright © 2023 KFC Vietnam</p>
+    </section>
+  )
+}

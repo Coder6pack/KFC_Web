@@ -1,57 +1,32 @@
-const Header = () => {
-    return (
-      <header className="common-header">
-        <section className="container mx-auto flex items-center">
-          <div className="header-left hidden md:block">
-            <a href="javascript:void(0);" className="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
-          <div className="header-nav flex-grow">
-            <a href="/" className="logo">KFC</a>
-            <ul className="hidden md:flex">
-              <li><a href="/menu" className="mat-ripple mat-ripple-unbounded">THỰC ĐƠN</a></li>
-              <li><a href="/book-party" className="mat-ripple mat-ripple-unbounded">DỊCH VỤ TIỆC</a></li>
-              <li><a href="/he-thong-nha-hang-kfc">Hệ Thống Nhà Hàng</a></li>
-            </ul>
-          </div>
-          <div className="header-right flex items-center">
-            <div>
-              <a href="javascript:void(0);" className="inactive">
-                <span className="button-content">Bắt đầu đặt hàng</span>
-              </a>
-            </div>
-            <a href="/en/" className="lang-option">English</a>
-            <a href="/" className="lang-option hidden">Tiếng Việt</a>
-            <ul>
-              <li>
-                <a>
-                  <i className="icon-login"></i>
-                </a>
-              </li>
-              <li>
-                <div className="shopping-cart">
-                  <div className="lines">
-                    <span className="line first"></span>
-                    <span className="line second"></span>
-                    <span className="line third"></span>
-                  </div>
-                  <a href="/cart" className="mat-ripple basket blank mat-ripple-unbounded">0</a>
-                </div>
-              </li>
-            </ul>
-            <a href="javascript:void(0);" className="hamburger ham-desktop-menu hidden md:block">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
-        </section>
-      </header>
-    );
-  };
-  
-  export default Header;
-  
+import React from 'react';
+
+function Header() {
+  return (
+    <div>
+      <nav className="flex justify-between items-center py-4 px-8 bg-white">
+        <div className="flex items-center">
+          <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="" className="w-32 mr-4" />
+          <h3 className="mr-4">Menu</h3>
+          <h3>Deals</h3>
+        </div>
+        <h3>Sign up</h3>
+        <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt="" className="w-8" />
+      </nav>
+
+      <div className="flex justify-center items-center bg-black text-white py-4 px-8">
+        <h3>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h3>
+        <button className="ml-4 bg-red-600 py-2 px-4 rounded-lg text-white text-lg">Start Order</button>
+      </div>
+
+      <div className="main">
+        <img src="kfc.webp" alt="" className="w-full" />
+      </div>
+
+      <div className="flex justify-center mt-8">
+        {/* Điền các phần tử thẻ tương tự như trên */}
+      </div>
+    </div>
+  );
+}
+
+export default Header;
