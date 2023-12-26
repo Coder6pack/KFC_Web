@@ -1,13 +1,9 @@
-import Partyform from "./components/Party"
-import Slideshow from "./components/slideshow"
-
+import Category from './components/Category'
 
 function App() {
   return (
     <div>
-      <Partyform/>
-      <Slideshow autoslide={true}>
-      </Slideshow>
+      <Category />
     </div>
   )
 }
