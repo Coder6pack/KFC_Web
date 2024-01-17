@@ -1,12 +1,12 @@
-import Footer from "./components/Footer"
+import Login from "./components/Login"
 import Header from "./components/Header"
-
-
+import Footer from "./components/Footer"
 function App() {
   return (
     <div>
-      <Header/>
-      <Footer/>
+      <Header></Header>
+      <Login></Login>
+      <Footer></Footer>
     </div>
   )
 }

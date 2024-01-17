@@ -35,6 +35,7 @@ export default {
         120:'120px',
         138: '138.83px',
         150:'150px',
+        300:'300px',
         303: '303px',
         313: '313.282',
         330:'330px',
@@ -42,6 +43,7 @@ export default {
         400:'400px',
         403:'403px',
         500:'500px',
+        775:'775px',
         1830: '1830px',
         99:'99%'
       },
@@ -82,6 +84,7 @@ export default {
         10:'10px',
         12:'12px',
         18: '18px',
+        20:'20px',
         24:'24px',
         25:'25px',
         60: '60px',
@@ -105,7 +108,9 @@ export default {
         15: '15px',
         30:'30px',
         40:'40px',
+        50:'50px',
         100: '100px',
+        112:'112.750px',
         200:'200px'
 
       },
@@ -117,12 +122,22 @@ export default {
       gap:{
         4:'4px',
         8:'8px',
+        12:'12px',
         20:'20px',
         120:'120px',
       },
       backgroundColor:{
         denthui:'#474747',
         xam:'DBDFD0',
+        xanhla:'#4CAF50',
+        facebook:'#4267B2',
+        google:'#dd4b39',
+        apple:'#fff',
+        google2:'#c64232',
+        apple2:'#f5f5f5',
+        facebook2:'#365899',
+        xanhla2:'#45a049',
+
       }
     }
   },
