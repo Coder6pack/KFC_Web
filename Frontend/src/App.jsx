@@ -1,13 +1,12 @@
-import Partyform from "./components/Party"
-import Slideshow from "./components/slideshow"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
 
 
 function App() {
   return (
     <div>
-      <Partyform/>
-      <Slideshow autoslide={true}>
-      </Slideshow>
+      <Header/>
+      <Footer/>
     </div>
   )
 }
