@@ -1,12 +1,11 @@
-import Login from "./components/Login"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Quenmk from "./components/Password"
+
+
+
 function App() {
   return (
     <div>
-      <Header></Header>
-      <Login></Login>
-      <Footer></Footer>
+      <Quenmk/>
     </div>
   )
 }
