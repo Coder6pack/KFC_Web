@@ -1,11 +1,9 @@
-import Quenmk from "./components/Password"
-
-
+import Quenmk from './components/Password'
 
 function App() {
   return (
     <div>
-      <Quenmk/>
+      <Quenmk />
     </div>
   )
 }

@@ -1,3 +1,3 @@
-import Quenmk from "./Quenmk";
+import Quenmk from './Quenmk'
 
 export default Quenmk
