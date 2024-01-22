@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-function App() {
-  return <div></div>
-=======
-import Footer from "./components/Footer"
-import Header from "./components/Header"
+import Home from './pages/Home'
 
-
-function App() {
+export default function App() {
   return (
     <div>
-      <Header/>
-      <Footer/>
+      <Home />
     </div>
   )
->>>>>>> 40957bd0c84b969ba09b72e7490c3d5b0fc6e869
 }
-
-export default App
