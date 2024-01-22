@@ -1,9 +1,9 @@
-import Quenmk from './components/Password'
+import Home from'./pages/Home'
 
 function App() {
   return (
     <div>
-      <Quenmk />
+      <Home/>
     </div>
   )
 }
