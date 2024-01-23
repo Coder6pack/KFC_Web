@@ -1,9 +1,8 @@
-import Home from './pages/Home'
-
+import Payment from './components/Payment'
 export default function App() {
   return (
     <div>
-      <Home />
+      <Payment/>
     </div>
   )
 }
