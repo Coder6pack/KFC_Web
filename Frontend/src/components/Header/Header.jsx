@@ -121,10 +121,6 @@ export default function Header() {
           </a>
         </div>
         <div className='self-center'>
-          <button className='px-24 py-12 border border-black rounded-full text-16 not-italic font-bold'>
-            {' '}
-            Book A Table{' '}
-          </button>
         </div>
       </div>
     </>
