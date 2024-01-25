@@ -10,7 +10,7 @@ function TotalDetail(props) {
 }
 export default function CartTotal() {
   return (
-    <div className='p-24 border border-categoryBorder rounded-lg w-424'>
+    <div className='p-24 border border-categoryBorder rounded-lg w-424 h-296'>
       <h1 className='text-20 not-italic font-medium leading-30 mb-7'>Cart Total</h1>
       <TotalDetail value='$14.44' title='' />
       <TotalDetail border='true' value='Free' title='Shipping:' />

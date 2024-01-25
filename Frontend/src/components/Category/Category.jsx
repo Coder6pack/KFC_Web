@@ -1,4 +1,5 @@
-export default function Category() {
+export default function Category(props) {
+  const { title } = props
   return (
     <div className='w-306 text-center px-34 pt-40 pb-32 border-1.5 rounded-12 border-categoryBorder'>
       <svg
@@ -15,7 +16,7 @@ export default function Category() {
           fill='#474747'
         />
       </svg>
-      <h3 className='mt-30 mb-15 text-24 not-italic font-bold leading-30 tracking-0.72'>Breakfast</h3>
+      <h3 className='mt-30 mb-15 text-24 not-italic font-bold leading-30 tracking-0.72'>{title}</h3>
       <p className='mb-30 text-16 not-italic font-normal text-categoryText leading-6'>
         In the new era of technology we look in the future with certainty and pride for our life.
       </p>
