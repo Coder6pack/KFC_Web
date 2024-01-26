@@ -1,8 +1,10 @@
-import Payment from './components/Payment'
+import AdminPage from "./components/AdminPage";
+import Header from "./components/Header"
 export default function App() {
   return (
     <div>
-      <Payment/>
+      <Header/>
+      <AdminPage/>
     </div>
   )
 }
