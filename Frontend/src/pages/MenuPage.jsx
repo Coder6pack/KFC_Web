@@ -1,5 +1,3 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Button from '../components/Buttons'
 
@@ -13,7 +11,6 @@ const title = [
 export default function MenuPage() {
   return (
     <div>
-      <Header />
       <div className='m-auto w-780'>
         <h1 className='mb-20 px-163 text-center text-100 no-italic font-normal leading-96'>Our Menu</h1>
         <p className='px-111.5 text-18 not-italic font-normal leading-7 text-center text-menuTitle'>
@@ -26,7 +23,6 @@ export default function MenuPage() {
         </div>
       </div>
       <Menu />
-      <Footer />
     </div>
   )
 }

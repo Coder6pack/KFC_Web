@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function TotalDetail(props) {
   const { value, border } = props
   const line = border ? 'border-y border-categoryBorder' : ''
@@ -15,9 +17,11 @@ export default function CartTotal() {
       <TotalDetail value='$14.44' title='' />
       <TotalDetail border='true' value='Free' title='Shipping:' />
       <TotalDetail value='$84.00' title='Total:' />
-      <button className='mt-20 font-semibold leading-5 px-40 py-16 text-white bg-button w-376 rounded-43'>
-        Proceed to checkout
-      </button>
+      <Link to={'/payment'}>
+        <button className='mt-20 font-semibold leading-5 px-40 py-16 text-white bg-button w-376 rounded-43'>
+          Proceed to checkout
+        </button>
+      </Link>
     </div>
   )
 }
