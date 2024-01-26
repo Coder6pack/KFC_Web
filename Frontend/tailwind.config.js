@@ -80,7 +80,14 @@ export default {
         550: '550px',
         676: '676.8px',
         775: '775px',
-        846: '846px'
+        846: '846px',
+        60: '60px',
+        70: '70px',
+        160: '160px',
+        224: '224px',
+        293: '293px',
+        1628: '1628px',
+        1679: '1679px'
       },
 
       //height
@@ -113,7 +120,14 @@ export default {
         297: '297.13px',
         367: '367.11px',
         748: '748.11px',
-        978: '978.61px'
+        978: '978.61px',
+        25: '25px',
+        38: '38px',
+        41: '41px',
+        70: '70px',
+        200: '200px',
+        222: '222px',
+        1494: '1494.42px'
       },
 
       //border width
@@ -207,7 +221,8 @@ export default {
         50: '50px',
         56: '56px',
         112: '112.750px',
-        392: '392.47px'
+        392: '392.47px',
+        24: '24px'
       },
 
       //scale
@@ -244,7 +259,8 @@ export default {
         facebook2: '#365899',
         xanhla2: '#45a049',
         do: '#E4002B',
-        payment: '#f8f7f5'
+        payment: '#f8f7f5',
+        adminpage: '#4e73df'
       },
       //line height
       lineHeight: {
