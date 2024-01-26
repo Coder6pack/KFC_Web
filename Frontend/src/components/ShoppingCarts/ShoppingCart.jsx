@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../Buttons'
 import Cart from '../Cart'
 
@@ -13,7 +14,9 @@ export default function ShoppingCart() {
       <Cart />
       <Cart />
       <Cart />
-      <Button content='Back to Home' />
+      <Link to={'/'}>
+        <Button content='Back to Home' />
+      </Link>
     </div>
   )
 }
