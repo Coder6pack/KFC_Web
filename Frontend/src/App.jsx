@@ -1,12 +1,8 @@
-import Login from './components/Login'
-import Payment from './components/Payment'
-import AdminPage from './components/AdminPage'
+import Brand from "./components/Brand/Brand"
 export default function App() {
   return (
     <div>
-      <Login/>
-      <Payment/>
-      <AdminPage/>
+      <Brand/>
     </div>
   )
 }
