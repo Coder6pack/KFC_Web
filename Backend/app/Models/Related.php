@@ -12,7 +12,7 @@ class Related extends Model
     protected $table = 'related';
 
     protected $fillable = [
-        'image_id',
+        'images_id',
         'path'
     ];
 
