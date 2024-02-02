@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\FoodTypeResource;
+use App\Models\Bill;
 use App\Models\FoodType;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -19,9 +20,8 @@ class FoodTypeController extends Controller
     {
         $foodTypes = FoodType::all();
         $foodTypeResource = FoodTypeResource::collection($foodTypes);
-        return  response()->json([
-            'data'=>$foodTypeResource
-        ],Response::HTTP_OK);
+
+        return $this->sentSuccessResource($foodTypeResource,Response::HTTP_OK);
     }
 
     /**
@@ -29,8 +29,12 @@ class FoodTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        return FoodType::create($request->all());
+        FoodType::create($request->all());
+        $foodTypes = FoodType::all();
+        $foodTypeResource = FoodTypeResource::collection($foodTypes);
+
+        return $this->sentSuccessResource($foodTypeResource,Response::HTTP_OK);
+
     }
 
     /**
@@ -63,8 +67,7 @@ class FoodTypeController extends Controller
         $foodType = FoodType::find($id);
         $foodType->delete();
         $foodTypeResource = FoodTypeResource::collection(FoodType::all());
-        return response()->json([
-            'data'=> $foodTypeResource
-        ],Response::HTTP_OK);      
+        
+        return $this->sentSuccessResource($foodTypeResource,Response::HTTP_OK);      
     }
 }
