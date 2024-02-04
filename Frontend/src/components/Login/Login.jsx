@@ -1,7 +1,8 @@
 export default function Login() {
   return (
     <>
-      <div className='w-775 m-50 p-20 border shadow'>
+    <div className="w-full ml-500">
+      <div className='w-780 m-50  h-auto p-20 border shadow'>
         <div className='mx-112 px-15 py-60'>
           <h2 className='font-black text-28 mb-20'>ĐĂNG NHẬP</h2>
           <form action='#'>
@@ -54,6 +55,7 @@ export default function Login() {
           </p>
         </div>
       </div>
+    </div>
     </>
   )
 }

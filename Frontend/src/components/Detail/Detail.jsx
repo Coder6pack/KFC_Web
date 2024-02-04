@@ -1,7 +1,7 @@
 export default function Detail() {
   return (
     <>
-      <div className='flex w-full justify-center gap-250 '>
+      <div className='flex w-full justify-center gap-250 mb-50'>
         <div className='pt-60 relative'>
           <img src='https://static.kfcvietnam.com.vn/images/items/lg/3-ga-xot-cua.jpg?v=gODzP3' alt='' />
           <div className='flex flex-nowrap w-460 h-95 pt-20 gap-6 '>
