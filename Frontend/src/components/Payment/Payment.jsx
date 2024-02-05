@@ -91,7 +91,7 @@ export default function Payment() {
             </div>
             <div>
               <div className='flex justify-between mb-10'>
-                <div className='text-15 '>Tổng đơn hàng</div>
+                <div className='text-15 '>Tổng đơn hàng:</div>
                 <div className='text-15 '>168.000đ</div>
               </div>
               <div className='flex justify-between'>
