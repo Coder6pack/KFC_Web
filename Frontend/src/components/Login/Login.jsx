@@ -1,7 +1,7 @@
 export default function Login() {
   return (
     <>
-    <div className="w-full ml-500">
+    <div className="w-full ml-600">
       <div className='w-780 m-50  h-auto p-20 border-payment shadow-2xl'>
         <div className='mx-112 px-15 py-60'>
           <h2 className='font-black text-28 mb-20'>ĐĂNG NHẬP</h2>
@@ -29,13 +29,13 @@ export default function Login() {
               <p className='my-20'>Hoặc tiếp tục với</p>
               <button
                 type='button'
-                className='text-center w-full p-10 border rounded-full mb-10 block text-left text-14 hover:facebook2 bg-facebook text-white'
+                className='text-center w-full p-10 border rounded-full mb-10 block text-14 hover:facebook2 bg-facebook text-white'
               >
                 Đăng nhập bằng facebook
               </button>
               <button
                 type='button'
-                className='text-center w-full p-10 border rounded-full mb-10 block text-left text-14 hover:apple2 bg-black text-white'
+                className='text-center w-full p-10 border rounded-full mb-10 block text-14 hover:apple2 bg-black text-white'
               >
                 Đăng nhập bằng apple
               </button>
