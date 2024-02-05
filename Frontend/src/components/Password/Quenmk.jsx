@@ -1,7 +1,8 @@
 export default function Quenmk() {
   return (
     <>
-      <div className='m-50 w-500'>
+    <div className="ml-700">
+    <div className='p-20 m-50 w-550 border-payment shadow-2xl rounded-xl'>
         <div className='w-500 h-34 text-right'>
           <button className=''>X</button>
         </div>
@@ -31,6 +32,7 @@ export default function Quenmk() {
           </ul>
         </div>
       </div>
+    </div>
     </>
   )
 }

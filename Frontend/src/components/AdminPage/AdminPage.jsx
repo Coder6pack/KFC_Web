@@ -1,4 +1,4 @@
-export default function AdminPage() {
+export default function Admin() {
   return (
     <>
       <div className="flex w-full">
@@ -111,7 +111,7 @@ export default function AdminPage() {
               <input type="text" placeholder="Search..." className="w-361 h-38 px-12 py-6 border border-xamden"/>
               </div>
               <div className="">
-                <a href="#" className="border px-12 py-6 rounded-full bg-xamden text-white font-bold">Thêm mới</a>
+                <a href="#" className="border px-12 py-6 rounded-full bg-xamden text-white font-bold hover:bg-red">Thêm mới</a>
               </div>
             </div>
             <table className="w-900 h-200 text-left ">
@@ -131,10 +131,10 @@ export default function AdminPage() {
                   <th className="border border-xamden">Office</th>
                   <th className="border border-xamden">Age</th>
                   <th className="border border-xamden text-center">
-                    <button className="px-5 border-r">
+                    <button className="px-5 py-5 border-r hover:bg-red">
                     xóa
                     </button>
-                    <button className="px-5">sửa</button>
+                    <button className="px-5 hover:bg-red">sửa</button>
                     </th>
                 </tr>
                 <tr>
@@ -143,10 +143,10 @@ export default function AdminPage() {
                   <th className="border border-xamden">Office</th>
                   <th className="border border-xamden">Age</th>
                   <th className="border border-xamden text-center">
-                    <button className="px-5 border-r">
+                    <button className="px-5 py-5 border-r hover:bg-red">
                     xóa
                     </button>
-                    <button className="px-5">sửa</button>
+                    <button className="px-5 hover:bg-red">sửa</button>
                     </th>
                 </tr>
                 <tr>
@@ -155,11 +155,11 @@ export default function AdminPage() {
                   <th className="border border-xamden">Office</th>
                   <th className="border border-xamden">Age</th>
                   <th className="border border-xamden text-center">
-                    <button className="px-5 border-r">
+                    <button className="px-5 py-5 border-r hover:bg-red">
                     xóa
                     </button>
-                    <button className="px-5">sửa</button>
-                    </th>
+                    <button className="px-5 py-5 hover:bg-red">sửa</button>
+                  </th>
                 </tr>
               </tbody>
             </table>

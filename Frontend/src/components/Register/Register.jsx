@@ -1,9 +1,10 @@
 export default function Register() {
   return (
     <>
-      <div className='w-550 h-748'>
+    <div className="ml-700">
+    <div className='w-550 h-748 border-payment shadow-2xl'>
         <div className='px-15 py-60'>
-          <h1 className='text-32 font-bold mb-20'>TẠO TÀI KHOẢN</h1>
+          <h1 className='text-32 font-bold mb-20 text-center'>TẠO TÀI KHOẢN</h1>
           <form>
             <div>
               <label htmlFor='fname' className='pt-8'>
@@ -60,7 +61,7 @@ export default function Register() {
             <button className='text-15 text-center border-red rounded-full bg-red w-full text-white px-2 py-12 font-bold'>
               Tạo Tài Khoản
             </button>
-            <p className='text-15 text-center'>
+            <p className='text-15 text-center pt-20'>
               Bạn đã có tài khoản?{' '}
               <a href='#' className='underline font-bold'>
                 Đăng nhập
@@ -69,6 +70,7 @@ export default function Register() {
           </form>
         </div>
       </div>
+    </div>
     </>
   )
 }

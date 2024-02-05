@@ -1,6 +1,6 @@
 import Menu from '../components/Menu'
 import Button from '../components/Buttons'
-
+import Brand from '../components/Brand'
 const title = [
   { id: 1, name: 'All' },
   { id: 2, name: 'Breakfast' },
@@ -23,6 +23,7 @@ export default function MenuPage() {
         </div>
       </div>
       <Menu />
+      <Brand/>
     </div>
   )
 }
