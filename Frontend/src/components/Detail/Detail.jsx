@@ -1,3 +1,7 @@
+
+import { BsPlusCircle } from "react-icons/bs";
+import { BsDashCircle } from "react-icons/bs";
+import { VscHeart } from "react-icons/vsc";
 export default function Detail() {
   return (
     <>
@@ -56,13 +60,16 @@ export default function Detail() {
             </li>
             <li className='pb-20 pt-21'>
               <div className='flex flex-nowrap justify-between w-360 h-52'>
-                <div className='px-20 py-15 items-center w-98 h-52 flex flex-nowrap gap-20'>
-                  <div className='border rounded-full'>
-                    <button className='pr-6 pl-6 pt-2 pb-2'>-</button>
+                <div className='px-20 py-15 items-center w-98 h-52 flex flex-nowrap gap-10'>
+                  <button>
+                  <VscHeart />
+                  </button>
+                  <div className=''>
+                    <button className='m-5'><BsDashCircle /></button>
                   </div>
                   <div>1</div>
-                  <div className='border rounded-full'>
-                    <button className='px-5 pt-2 pb-2'>+</button>
+                  <div className=''>
+                    <button className="m-5"><BsPlusCircle /></button>
                   </div>
                 </div>
                 <div className=''>

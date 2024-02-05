@@ -2,7 +2,7 @@ export default function Login() {
   return (
     <>
     <div className="w-full ml-500">
-      <div className='w-780 m-50  h-auto p-20 border shadow'>
+      <div className='w-780 m-50  h-auto p-20 border-payment shadow-2xl'>
         <div className='mx-112 px-15 py-60'>
           <h2 className='font-black text-28 mb-20'>ĐĂNG NHẬP</h2>
           <form action='#'>
