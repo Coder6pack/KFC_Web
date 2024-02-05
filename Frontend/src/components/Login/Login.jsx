@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 export default function Login() {
   return (
     <>
-    <div className="w-full ml-600">
+    <div className="w-full ml-550">
       <div className='w-780 m-50  h-auto p-20 border-payment shadow-2xl'>
         <div className='mx-112 px-15 py-60'>
           <h2 className='font-black text-28 mb-20'>ĐĂNG NHẬP</h2>
@@ -14,11 +16,9 @@ export default function Login() {
               Mật khẩu *
             </label>
             <input type='password' id='password' name='password' required className='w-full p-8 border-b mb-20' />
-            <p className=''>
-              <a href='#' className='float-right mb-20'>
-                Bạn quên mật khẩu?
-              </a>
-            </p>
+            <NavLink to={'/resetpassword'} className='float-right mb-20'>
+            Bạn quên mật khẩu?
+            </NavLink>
             <button
               type='submit'
               className='w-full p-10  border rounded-full cursor-pointer hover:bg-xanhla2 bg-xanhla text-white'
@@ -41,18 +41,18 @@ export default function Login() {
               </button>
               <button
                 type='button'
-                className='text-center w-full p-10 border rounded-full mb-10 block text-left text-14 hover:google2 bg-google text-white'
+                className='text-center w-full p-10 border rounded-full mb-10 block text-14 hover:google2 bg-google text-white'
               >
                 Đăng nhập bằng google
               </button>
             </div>
           </form>
-          <p className='text-center mt-20 font-14'>
-            Bạn chưa có tài khoản?{' '}
-            <a href='#' className='font-bold underline hover:no-underline'>
+          <div className='text-center mt-20 font-14'>
+            Bạn chưa có tài khoản ?
+            <NavLink to={'/register'} className='font-bold underline hover:no-underline'>
               Đăng ký
-            </a>
-          </p>
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>
