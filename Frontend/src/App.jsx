@@ -15,20 +15,20 @@ export default function App() {
   return (
     <div>
       <div>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/menu' element={<MenuPage />} />
-        <Route path='/menu/:id/detail' element={<DetailPage />} />
-        <Route path='/shopping-cart' element={<ShoppingCartPage />} />
-        <Route path='/payment' element={<PaymentPage />} />
-        <Route path='/admin' element={<AdminPage />} />
-        <Route path='/login' element={<LoginPage/>}/>
-        <Route path='/register' element={<RegisterPage/>}/>
-        <Route path='/resetpassword' element={<Quenmk/>}/>
-        <Route path='/*' element={<NotFoundPage />} />
-      </Routes>
-      <Footer/>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/menu' element={<MenuPage />} />
+          <Route path='/menu/:id/detail' element={<DetailPage />} />
+          <Route path='/shopping-cart' element={<ShoppingCartPage />} />
+          <Route path='/payment' element={<PaymentPage />} />
+          <Route path='/admin' element={<AdminPage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
+          <Route path='/resetpassword' element={<Quenmk />} />
+          <Route path='/*' element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
       </div>
     </div>
   )

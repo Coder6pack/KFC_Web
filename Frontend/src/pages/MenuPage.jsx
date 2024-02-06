@@ -1,6 +1,9 @@
-import Menu from '../components/Menu'
 import Button from '../components/Buttons'
 import Brand from '../components/Brand'
+import { useQuery } from '@tanstack/react-query'
+import { getFoods } from '../apis/foods.api'
+import { Link } from 'react-router-dom'
+import Foods from '../components/Foods'
 const title = [
   { id: 1, name: 'All' },
   { id: 2, name: 'Breakfast' },
@@ -9,6 +12,10 @@ const title = [
   { id: 5, name: 'Desserts' }
 ]
 export default function MenuPage() {
+  const { data } = useQuery({
+    queryKey: ['food'],
+    queryFn: () => getFoods()
+  })
   return (
     <div>
       <div className='m-auto w-780'>
@@ -22,8 +29,14 @@ export default function MenuPage() {
           ))}
         </div>
       </div>
-      <Menu />
-      <Brand/>
+      <div className='flex flex-wrap justify-center gap-3 mb-100'>
+        {data.data.data.map((food) => (
+          <Link key={food.id} to={`/menu/${food.id}/detail`}>
+            <Foods name={food.name} />
+          </Link>
+        ))}
+      </div>
+      <Brand />
     </div>
   )
 }

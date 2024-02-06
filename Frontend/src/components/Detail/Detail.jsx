@@ -1,8 +1,18 @@
-
-import { BsPlusCircle } from "react-icons/bs";
-import { BsDashCircle } from "react-icons/bs";
-import { VscHeart } from "react-icons/vsc";
+import { useState } from 'react'
+import { BsPlusCircle } from 'react-icons/bs'
+import { useParams } from 'react-router-dom'
+import { BsDashCircle } from 'react-icons/bs'
+import { VscHeart } from 'react-icons/vsc'
 export default function Detail() {
+  const [count, setCount] = useState(0)
+  const params = useParams()
+  console.log(params)
+  const handleDash = () => {
+    count === 0 ? setCount(0) : setCount(count - 1)
+  }
+  const handlePlus = () => {
+    setCount(count + 1)
+  }
   return (
     <>
       <div className='flex w-full justify-center gap-250 mb-50'>
@@ -62,14 +72,18 @@ export default function Detail() {
               <div className='flex flex-nowrap justify-between w-360 h-52'>
                 <div className='px-20 py-15 items-center w-98 h-52 flex flex-nowrap gap-10'>
                   <button>
-                  <VscHeart />
+                    <VscHeart />
                   </button>
                   <div className=''>
-                    <button className='m-5'><BsDashCircle /></button>
+                    <button className='m-5' onClick={handleDash}>
+                      <BsDashCircle />
+                    </button>
                   </div>
-                  <div>1</div>
+                  <div>{count}</div>
                   <div className=''>
-                    <button className="m-5"><BsPlusCircle /></button>
+                    <button className='m-5' onClick={handlePlus}>
+                      <BsPlusCircle />
+                    </button>
                   </div>
                 </div>
                 <div className=''>
