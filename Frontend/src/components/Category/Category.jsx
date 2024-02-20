@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Category(props) {
   const { title } = props
   return (
@@ -20,9 +22,9 @@ export default function Category(props) {
       <p className='mb-30 text-16 not-italic font-normal text-categoryText leading-6'>
         In the new era of technology we look in the future with certainty and pride for our life.
       </p>
-      <a href='#' className='text-button text-16 not-italic font-bold leading-6'>
+      <Link to={'/menu'} className='text-button text-16 not-italic font-bold leading-6'>
         Explore Menu
-      </a>
+      </Link>
     </div>
   )
 }
